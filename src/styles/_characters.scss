@@ -1,0 +1,63 @@
+@use 'variables';
+
+@mixin maxWidth($maxWidth: 480px) {
+   max-width: $maxWidth;
+}
+
+.characters {
+    padding-top: 15vh;
+    height: 140vh;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: rgba(variables.$backgroundColor, .8);
+        max-width: 804px;
+
+        &:last-child {
+            margin-top: 24px;
+            padding-left: 36px;
+        }
+        
+
+        img {
+            height: 320px;
+            max-width: 280px;
+            width: cover;
+            border: 18px solid #fff;
+            margin-right: 24px;
+
+            &:last-child {
+                margin-right: 0px;
+                margin-left: 36px;
+            }
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+            &--title{
+                font-family: variables.$fontTitle;
+                max-width: 520;
+
+            }
+            
+            &--subtitle {
+                font-family: variables.$fontSubtitle;
+                font-weight: bold;
+                font-size: 18px;
+                @include maxWidth();
+
+            }
+
+            &--info {
+                font-family: variables.$fontSubtitle;
+                @include maxWidth();
+
+            }
+        }
+    }
+}

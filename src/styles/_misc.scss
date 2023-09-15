@@ -1,0 +1,19 @@
+.misc {
+    img {
+        position: absolute;
+    }
+    
+    &--right{
+        max-width: 240px;
+        right: 32px;
+        top: 140%;
+    }
+
+    &--left{
+        left: 32px;
+        max-width: 480px;
+        transform: rotate(-22deg);
+        width: 100%;
+        top: 220%;
+    }
+}

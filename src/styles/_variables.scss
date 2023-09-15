@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Poppins:ital@0;1&display=swap');
+
+@font-face {
+    font-family: Akira;
+    src: url(../../assets/fonts/Akira.otf);
+}
+
+@font-face {
+    font-family: Heavitas;
+    src: url(../../assets/fonts/Heavitas.ttf);
+}
+
+
+//colors
+$backgroundColor: #0d0d0d;
+$primary: #dd2b37;
+$secondary: #dd5e2b;
+$blank: #fdfdfd;
+
+//fonts
+$fontTitle: Akira, sans-serif;
+$fontSubtitle: Noto Sans JP, sans-serif;
+$fontHeavy: Heavitas, sans-serif;
+$fontRounded: Poppins, sans-serif;

@@ -1,0 +1,19 @@
+@use 'variables';
+@use 'reset';
+@use 'hero';
+@use 'header';
+@use 'characters';
+@use 'manga';
+@use 'misc';
+
+body {
+    background-color: variables.$backgroundColor;
+    color: variables.$blank;
+}
+
+.main {
+    background-position: fixed;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(variables.$backgroundColor, 1)), url(../../build/imgs/background__neo-tokyo-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

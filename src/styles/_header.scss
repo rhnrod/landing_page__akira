@@ -1,0 +1,47 @@
+@use 'variables';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .6);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    font-family: variables.$fontHeavy;
+    
+    &__logo {
+        max-width: 90px;
+        width: 100%;
+    }
+
+    &__nav {
+        &__list {
+            display: flex;
+            &__item {
+                padding: 16px 24px;
+                cursor: pointer;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+
+                a {
+                    font-size: 18px;
+                    text-decoration: none;
+                    color: variables.$blank;
+                    font-weight: bold;
+                }
+
+                &:last-child {
+                    margin: 0 8px;
+                    border-radius: 6px;
+                    background-color: variables.$primary;
+
+                    &:hover {
+                        background-color: lighten(variables.$primary, 10%);
+                    }
+                }
+            } 
+        }
+    }
+}
