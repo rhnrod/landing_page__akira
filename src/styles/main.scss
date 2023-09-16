@@ -1,10 +1,11 @@
 @use 'variables';
 @use 'reset';
+@use 'misc';
 @use 'hero';
 @use 'header';
 @use 'characters';
 @use 'manga';
-@use 'misc';
+@use 'culture';
 
 body {
     background-color: variables.$backgroundColor;
