@@ -9,6 +9,7 @@
 body {
     background-color: variables.$backgroundColor;
     color: variables.$blank;
+    overflow-x: hidden;
 }
 
 .main {

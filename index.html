@@ -69,17 +69,33 @@
             </div>
         </section>
         <div class="misc">
-            <img class="misc--left" src="./build/imgs/misc/manga__kaneda.png" alt="pills">
+            <img class="misc--left" src="./build/imgs/misc/manga__kaneda.png" alt="manga kaneda scene">
             <img class="misc--right" src="./build/imgs/misc/decalc__pilss.png" alt="pills">
+            <img class="misc--right" src="./build/imgs/misc/manga_ride.jpg" alt="manga ride scene">
         </div>
     </div>
     <section class="manga">
         <div class="manga__content">
             <h2 class="manga__content__title">Mangás</h2>
-            <div class="manga_content_list">
-                <img src="./build/imgs/cards/akira__vol-1.jpg" alt="Mangá (Vol. 1)">
+            <div class="manga__content__list">
+                <img data-manga-id="Volume_1" class="manga__content__list__item manga__content__list__item--is-active" src="./build/imgs/cards/akira_vol-1.jpg" alt="Mangá (Vol. 1)">
+                <img data-manga-id="Volume_2" class="manga__content__list__item" src="./build/imgs/cards/akira_vol-2.jpg" alt="Mangá (Vol. 2)">
+                <img data-manga-id="Volume_3" class="manga__content__list__item" src="./build/imgs/cards/akira_vol-3.jpg" alt="Mangá (Vol. 3)">
+                <img data-manga-id="Volume_4" class="manga__content__list__item" src="./build/imgs/cards/akira_vol-4.jpg" alt="Mangá (Vol. 4)">
+                <img data-manga-id="Volume_5" class="manga__content__list__item" src="./build/imgs/cards/akira_vol-5.jpg" alt="Mangá (Vol. 5)">
+                <img data-manga-id="Volume_6" class="manga__content__list__item" src="./build/imgs/cards/akira_vol-6.jpg" alt="Mangá (Vol. 6)">
+                <div class="manga__content__list__buttons">
+                    <button data-manga-button="Volume_1" class="manga__content__list__buttons__button manga__content__list__buttons__button--one manga__content__list__buttons__button--is-active">Volume 1</button>
+                    <button data-manga-button="Volume_2" class="manga__content__list__buttons__button manga__content__list__buttons__button--two">Volume 2</button>
+                    <button data-manga-button="Volume_3" class="manga__content__list__buttons__button manga__content__list__buttons__button--three">Volume 3</button>
+                    <button data-manga-button="Volume_4" class="manga__content__list__buttons__button manga__content__list__buttons__button--four">Volume 4</button>
+                    <button data-manga-button="Volume_5" class="manga__content__list__buttons__button manga__content__list__buttons__button--five">Volume 5</button>
+                    <button data-manga-button="Volume_6" class="manga__content__list__buttons__button manga__content__list__buttons__button--six">Volume 6</button>
+                </div>
             </div>
         </div>
     </section>
+
+    <script src="build/js/main.js"></script>
 </body>
 </html>

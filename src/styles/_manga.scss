@@ -1,16 +1,85 @@
 @use 'variables';
 
 .manga {
+    display: flex;
+    justify-content: space-between;
+    
     &__content {
         max-width: 1024px;
-        display: flex;
-        justify-content: center;
         margin: 0 auto;
 
         &__title {
             font-size: 120px;
+            margin-bottom: 36px;
             font-family: variables.$fontHeavy;
             text-transform: uppercase;
+            display: block;
+        }
+
+        &__list {
+           display: flex; 
+           justify-content: space-around;
+
+            &__item {
+                z-index: 2;
+                max-width: 380px;
+                display: none;
+                visibility: hidden;
+
+                &--is-active {
+                    display: block;
+                    visibility: visible;
+                }
+            }
+
+            &__buttons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                &__button {
+                    font-family: variables.$fontTitle;
+                    font-size: 22px;
+                    padding: 16px 24px;
+                    max-width: 220px;
+                    border: none;
+                    cursor: pointer;
+                    filter: grayscale(1);
+                    margin-bottom: 16px;
+                    margin-left: 32px;
+        
+                    &:hover {
+                        filter: grayscale(.3);
+                    }
+        
+                    &--one {
+                        background-color: variables.$buttonOne;
+                    }
+                    &--two {
+                        background-color: variables.$buttonTwo;
+                    }
+                    &--three {
+                        background-color: variables.$buttonThree;
+                    }
+                    &--four {
+                        background-color: variables.$buttonFour;
+                    }
+                    &--five {
+                        background-color: variables.$buttonFive;
+                    }
+                    &--six {
+                        background-color: variables.$buttonSix;
+                    }
+
+                    &--is-active {
+                        filter: none;
+
+                        &:hover {
+                            filter: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }
