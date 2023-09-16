@@ -1,5 +1,18 @@
 @use 'variables';
 
+@mixin bgImage() {
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to top,
+        rgba(variables.$backgroundColor, 1) 0%,
+        rgba(variables.$backgroundColor, .7) 50%,
+        rgba(variables.$backgroundColor, 1) 100%),
+        url(../../build/imgs/background__neo-tokyo.jpg);
+
+}
+
 .culture {
     display: flex;
     flex-direction: column;
@@ -7,11 +20,7 @@
     margin: 0 auto;
     padding-top: 25vh;
 
-
-    background-position: fixed;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(variables.$backgroundColor, 1)), url(../../build/imgs/background__neo-tokyo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include bgImage();
 
     &__title {
         font-size: 90px;

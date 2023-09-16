@@ -3,6 +3,8 @@
 .manga {
     display: flex;
     justify-content: space-between;
+    height: 120vh;
+    
     
     &__content {
         max-width: 1024px;

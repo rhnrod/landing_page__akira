@@ -6,6 +6,7 @@
 @use 'characters';
 @use 'manga';
 @use 'culture';
+@use 'footer';
 
 body {
     background-color: variables.$backgroundColor;
