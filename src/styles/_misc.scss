@@ -9,7 +9,7 @@
         top: 140%;
 
         &:last-child {
-        z-index: -1;
+        z-index: 0;
         max-width: 420px;
         width: 100%;
         transform: rotate(18deg);
@@ -20,7 +20,7 @@
     }
 
     &--left{
-        z-index: -1;
+        z-index: 0;
         left: 32px;
         max-width: 480px;
         transform: rotate(-22deg);

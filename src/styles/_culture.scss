@@ -7,6 +7,12 @@
     margin: 0 auto;
     padding-top: 25vh;
 
+
+    background-position: fixed;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(variables.$backgroundColor, 1)), url(../../build/imgs/background__neo-tokyo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
     &__title {
         font-size: 90px;
         margin-bottom: 36px;
