@@ -36,6 +36,7 @@
         font-family: variables.$fontHeavy;
         text-transform: uppercase;
         display: block;
+        z-index: 1;
 
         @media (max-width: 1280px) {
             font-size: 76px;

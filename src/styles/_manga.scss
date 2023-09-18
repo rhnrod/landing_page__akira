@@ -77,6 +77,7 @@
                 }
 
                 &__button {
+                    z-index: 1;
                     font-family: variables.$fontTitle;
                     font-size: 22px;
                     padding: 16px 24px;
