@@ -8,9 +8,15 @@
     padding-top: 15vh;
     height: 140vh;
 
+    @media (max-width: 1280px) {
+        height: 80vh;
+    }
+
     @media (max-width: 768px) {
         height: 180vh;
     }
+
+
 
     &__content {
         display: flex;
@@ -27,6 +33,14 @@
             background-color: rgba(variables.$backgroundColor, .5);
             padding-bottom: 8px;
         }
+
+        @media (max-width:1280px) {
+            width: 90%;
+        }
+
+         @media (max-width: 768px) {
+            width: 100%;
+         }
 
         &:last-child {
             margin-top: 24px;
@@ -79,7 +93,13 @@
                     font-size: 22px;
                     span {
                         display: none;
-                    }                    
+                    }         
+                }
+
+                @media (max-width:1280px) {
+                    span {
+                        display: none;
+                    } 
                 }
 
             }

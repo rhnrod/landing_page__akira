@@ -1,32 +1,53 @@
 .misc {
     img {
         position: absolute;
+        overflow-x: hidden;
+
     }
     
     &--right{
         max-width: 240px;
         right: 32px;
         top: 140%;
+        overflow-x: hidden;
+
+        @media (max-width: 1280px) {
+            display: none;
+            visibility: hidden;
+        }
 
         &:last-child {
-        z-index: 0;
-        max-width: 420px;
-        width: 100%;
-        transform: rotate(18deg);
-        top: 240%;
-        opacity: .3;
+            z-index: 0;
+            max-width: 420px;
+            width: 100%;
+            transform: rotate(18deg);
+            top: 240%;
+            opacity: .3;
 
+            @media (max-width: 1280px) {
+                display: inline;
+                visibility: visible;
+                max-width: 340px;
+                top: 160%;
+                left: 60%;
+            }
         }
     }
 
     &--left{
-        z-index: 0;
+        z-index: -1;
         left: 32px;
         max-width: 480px;
         transform: rotate(-22deg);
         width: 100%;
         top: 220%;
         opacity: .3;
+
+        @media (max-width: 1280px) {
+            visibility: visible;
+            max-width: 320px;
+            top: 150%;
+        }
     }
 
     @media (max-width: 768px) {

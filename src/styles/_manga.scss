@@ -4,11 +4,18 @@
     display: flex;
     justify-content: space-between;
     height: 120vh;
+    width: 100%;
     padding-top: 15vh;
 
 
+    @media (max-width: 1280px) {
+        padding-top: 5vh;
+        height: 80vh;
+    }
+
     @media (max-width: 768px) {
         padding-top: 5vh;
+        height: 120vh;
     }
     
     
