@@ -20,6 +20,10 @@
     margin: 0 auto;
     padding-top: 25vh;
 
+    @media (max-width:768px) {
+        padding-top: 5vh;
+    }
+
     @include bgImage();
 
     &__title {
@@ -28,6 +32,11 @@
         font-family: variables.$fontHeavy;
         text-transform: uppercase;
         display: block;
+
+        @media (max-width: 768px) {
+            font-size: 46px;
+            text-align: center;
+        }
     }
 
     &__content {
@@ -38,6 +47,16 @@
         margin-bottom: 48px;
         max-width: 1208px;
         width: 100%;
+
+        @media (max-width:768px) {
+            flex-direction: column;
+            width: 80%;
+
+            video {
+                max-width: 320px;
+                max-height: 200px;
+            }
+        }
     
 
         &__text {
@@ -48,6 +67,10 @@
                 font-family: variables.$fontHeavy;
                 text-align: center;
                 margin-bottom: 18px;
+
+                @media (max-width:768px) {
+                    font-size: 36px;
+                }
             }
 
             p {
@@ -56,18 +79,31 @@
                 text-align: justify;
                 text-indent: 48px;
                 margin: 16px 0;
+
+                @media (max-width:768px) {
+                    font-size: 16px;
+                    text-indent: 24px;
+                }
             }
         }
 
         &__figure {
             img {
                 width: 520px;
+
+                @media (max-width:768px) {
+                    width: 320px;
+                }
             }
 
             figcaption {
                 text-align: center;
                 font-family: variables.$fontSubtitle;
                 font-weight: bold;
+
+                @media (max-width:768px) {
+                    font-size: small;
+                }
             }
         }
 

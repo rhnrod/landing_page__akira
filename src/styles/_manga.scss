@@ -5,11 +5,21 @@
     justify-content: space-between;
     height: 120vh;
     padding-top: 15vh;
+
+
+    @media (max-width: 768px) {
+        padding-top: 5vh;
+    }
     
     
     &__content {
         max-width: 1024px;
         margin: 0 auto;
+
+        @media (max-width: 768px) {
+            max-width: 600px;
+            text-align: center;
+        }
 
         &__title {
             font-size: 120px;
@@ -17,11 +27,25 @@
             font-family: variables.$fontHeavy;
             text-transform: uppercase;
             display: block;
+
+            @media (max-width: 768px) {
+                font-size: 60px;
+                margin: 0 auto;
+            }
         }
 
         &__list {
            display: flex; 
            justify-content: space-around;
+
+           @media (max-width: 768px) {
+            flex-direction: column;
+
+            img {
+                max-width: 338px;
+                max-height: 600px;
+            }
+        }
 
             &__item {
                 z-index: 3;
@@ -40,6 +64,11 @@
                 flex-direction: column;
                 justify-content: center;
 
+                @media (max-width:768px) {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+
                 &__button {
                     font-family: variables.$fontTitle;
                     font-size: 22px;
@@ -50,6 +79,11 @@
                     filter: grayscale(1);
                     margin-bottom: 16px;
                     margin-left: 32px;
+
+                    @media (max-width:768px) {
+                        font-size: 14px;
+                        margin: 0;
+                    }
         
                     &:hover {
                         filter: grayscale(.3);
