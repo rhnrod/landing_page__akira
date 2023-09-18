@@ -8,6 +8,10 @@
     padding-top: 15vh;
     height: 140vh;
 
+    @media (max-width: 768px) {
+        height: 200vh;
+    }
+
     &__content {
         display: flex;
         justify-content: center;
@@ -15,9 +19,24 @@
         background-color: rgba(variables.$backgroundColor, .8);
         max-width: 804px;
 
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 80%;
+            background-color: rgba(variables.$backgroundColor, .5);
+            padding-bottom: 8px;
+        }
+
         &:last-child {
             margin-top: 24px;
             padding-left: 36px;
+
+            @media (max-width: 768px) {
+                flex-direction: column-reverse;
+                padding-left: 0px;
+                padding-top: 8px;
+            }
         }
         
 
@@ -28,9 +47,18 @@
             border: 18px solid #fff;
             margin-right: 24px;
 
+            @media (max-width:768px) {
+                margin: 16px auto;
+            }
+
             &:last-child {
                 margin-right: 0px;
                 margin-left: 36px;
+
+                @media (max-width:768px) {
+                    margin: 16px auto;
+                }
+    
             }
         }
 
@@ -38,10 +66,21 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+
+            @media (max-width:768px) {
+                padding: 8px;
+            }
             
             &--title{
                 font-family: variables.$fontTitle;
                 max-width: 520;
+
+                @media (max-width: 768px) {
+                    font-size: 22px;
+                    span {
+                        display: none;
+                    }                    
+                }
 
             }
             
@@ -51,12 +90,21 @@
                 font-size: 18px;
                 @include maxWidth();
 
+                @media (max-width: 768px) {
+                    span {
+                        display: none;
+                    }                    
+                }
+
             }
 
             &--info {
                 font-family: variables.$fontSubtitle;
                 @include maxWidth();
 
+                @media (max-width: 768px) {
+                        display: none;
+                }
             }
         }
     }

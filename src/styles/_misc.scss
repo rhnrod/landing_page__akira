@@ -28,4 +28,9 @@
         top: 220%;
         opacity: .3;
     }
+
+    @media (max-width: 768px) {
+        display: none;
+        visibility: hidden;
+    }
 }

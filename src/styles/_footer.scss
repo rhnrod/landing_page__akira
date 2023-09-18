@@ -3,4 +3,37 @@
 .footer {
     height: 20vh;
     background-color: variables.$backgroundColor;
+    display: flex;
+    justify-content: space-evenly;
+
+    &__content {
+        max-width: 980px;
+        padding: 56px;
+        text-align: center;
+
+        &__list {
+            display: flex;
+            gap: 12px;
+            padding: 24px;
+            
+            &__item {
+                a {
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-family: variables.$fontSubtitle;
+                    color: variables.$blank;
+                    text-decoration: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: lighten(variables.$primary, 15);
+                    }
+                }
+            }
+        }
+
+        p {
+            font-family: variables.$fontRounded;
+        }
+    }
 }

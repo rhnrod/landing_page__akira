@@ -10,10 +10,19 @@
     left: 0;
     z-index: 1;
     font-family: variables.$fontHeavy;
+
+    @media (max-width: 768px) {
+        padding: 12px;
+       
+    }
     
     &__logo {
         max-width: 90px;
         width: 100%;
+
+        @media (max-width: 768px) {
+            max-width: 50px;
+        }
     }
 
     &__nav {
@@ -24,12 +33,24 @@
                 cursor: pointer;
                 text-transform: uppercase;
                 letter-spacing: 1px;
+                text-align: center;
+
+                @media (max-width: 768px) {
+                    padding: 8px 16px;
+                   
+                }
 
                 a {
                     font-size: 18px;
                     text-decoration: none;
                     color: variables.$blank;
                     font-weight: bold;
+
+                    @media (max-width: 768px) {
+                        font-size: 14px;
+                        font-weight: normal;
+                       
+                    }
                 }
 
                 &:last-child {

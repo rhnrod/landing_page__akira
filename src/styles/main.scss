@@ -19,4 +19,8 @@ body {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(variables.$backgroundColor, 1)), url(../../build/imgs/background__neo-tokyo-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (max-width: 768px) {
+        background-position: center;
+    }
 }
