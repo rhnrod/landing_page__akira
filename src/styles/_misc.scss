@@ -17,7 +17,7 @@
         }
 
         &:last-child {
-            z-index: 0;
+            z-index: -1;
             max-width: 420px;
             width: 100%;
             transform: rotate(18deg);
